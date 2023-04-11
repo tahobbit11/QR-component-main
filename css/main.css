@@ -148,6 +148,9 @@
       background-color: white;
       border: 10px solid white;
       border-radius: 20px;
+     }
+
+     main .content-wrapper {
       margin-top: 20%;
      }
 
@@ -179,9 +182,11 @@
      .attribution { 
       font-size: 11px; 
       text-align: center; 
+    }
+
+    .attribution span {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      justify-content: center;
     }
 
     .attribution a { 
@@ -274,8 +279,51 @@
      Modify as content requires.
      ========================================================================== */
   
-  @media only screen and (min-width: 35em) {
+  @media only screen and (min-width: 768px) {
     /* Style adjustments for viewports that meet the condition */
+    .content-wrapper {
+      max-width: 55%;
+    }
+    /*Text styles */
+    h2 {
+      font-size: 1.75em;
+    }
+
+    p {
+      font-size: 1.25em;
+    }
+
+    .attribution {
+      font-size: .8em;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .content-wrapper {
+      max-width: 30%;
+    }
+    /*Text styles */
+    h2 {
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 1.5em;
+    }
+
+    .attribution {
+      font-size: 1em;
+    }
+    /*General changes */
+    main .content-wrapper {
+      margin-top: 10%;
+    }
+  }
+
+  @media only screen and (min-width: 1920px) {
+    .content-wrapper {
+      max-width: 20%;
+    }
   }
   
   @media print,
